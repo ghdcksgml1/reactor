@@ -1,0 +1,66 @@
+### 기본 Git 무시 파일 ###
+
+# IDE 설정 파일
+.idea/
+*.iml
+*.ipr
+*.iws
+*.swp
+
+# OS별 불필요한 파일
+.DS_Store
+Thumbs.db
+
+### 빌드 및 의존성 무시 파일 ###
+
+# Gradle
+.gradle/
+build/
+!gradle-wrapper.jar
+.gradle/cache/
+.gradle/gradle.lockfile
+gradle.log
+
+# Kotlin & Java
+*.class
+*.jar
+*.war
+*.ear
+out/
+
+# 테스트 결과 및 커버리지 보고서
+test-results/
+test-output/
+coverage/
+jacoco/
+
+### 멀티모듈 관련 무시 파일 ###
+
+# 루트 프로젝트 Gradle 설정
+/settings.gradle
+/.gradle/
+!gradle/wrapper/gradle-wrapper.properties
+
+# 각 모듈의 빌드 파일 및 불필요한 설정
+**/build/
+**/out/
+**/.gradle/
+**/.idea/
+
+# 로그 및 환경 설정 파일
+logs/
+*.log
+*.env
+.env.local
+.env.test
+.env.production
+
+# Lombok 설정 파일
+**/lombok.config
+
+# 기타 임시 파일
+*.tmp
+*.bak
+*.swp
+*.swo
+*.swn
